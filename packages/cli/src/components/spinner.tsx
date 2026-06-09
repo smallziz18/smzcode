@@ -5,4 +5,4 @@ export function Spinner() {
     const { colors } = useTheme();
 
     return <spinner name="aesthetic" color={colors.primary} />;
-};
+}
