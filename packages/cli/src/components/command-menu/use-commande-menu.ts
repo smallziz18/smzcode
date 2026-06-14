@@ -53,7 +53,7 @@ export function useCommandMenu(): UseCommandMenuReturn {
         }
     };
 
-    // Resolve a command at a specific index (returns the command, caller handles execution)
+    // Resolve a command at a specific index.ts (returns the command, caller handles execution)
     const resolveCommand = (index: number): Command | undefined => {
         const command = filteredCommands[index];
         if (command) {

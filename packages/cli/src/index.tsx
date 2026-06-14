@@ -4,6 +4,7 @@ import {createMemoryRouter, RouterProvider} from "react-router";
 import {RootLayout} from "./layouts/root-layouts.tsx";
 import {Home} from "./screens/home.tsx";
 import {NewSession} from "./screens/new-session.tsx";
+import { Session } from "./screens/sessions.tsx";
 
 const router = createMemoryRouter([
     {
@@ -12,7 +13,7 @@ const router = createMemoryRouter([
         children: [
             { index: true, element: <Home /> },
             { path: "sessions/new", element: <NewSession /> },
-            { path: "sessions/:id", element: <box>Edit Session</box> },
+            { path: "sessions/:id", element: <Session /> },
         ]
     }
 ]);
